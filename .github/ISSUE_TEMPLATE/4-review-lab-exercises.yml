@@ -1,0 +1,314 @@
+name: Labs - Review Lab Exercises and Suggest Improvements (agent task)
+description: Review a lab's exercises against quality criteria and propose concrete improvements. (Assign to an agent for implementation.)
+title: "review: lab exercises quality review"
+labels: ["review", "teaching", "documentation"]
+projects: ["SERC-Fd-Cloud-Dev/1"]
+body:
+  - type: textarea
+    id: review-task
+    attributes:
+      label: Task - Review Lab Exercises and Suggest Improvements
+      description: Describe the review task for the implementing agent.
+      value: |
+        Review this lab exercise for the Level 5 / second-year Cloud Development module.
+
+        The review should identify strengths, weaknesses, and specific improvements. Focus on whether the lab supports student learning, is clear for Level 5 students, and develops transferable cloud development skills without depending on the module assignment. Provide actionable suggestions.
+        
+        Focus the review on:
+        - suitability for Cloud Development, with potential reuse in related cloud-focused modules
+        - alignment with transferable cloud development competencies (not module-specific outcomes)
+        - clarity and structure for Level 5 students
+        - level of scaffolding
+        - cognitive demand
+        - practical skill development
+        - feedback and reflection opportunities
+        - time and workload realism
+        - technical accuracy and currency
+        - engagement and context
+
+        ---
+
+        ## Review checklist
+
+        ### 1. Learning outcome alignment
+
+        Evaluate whether the lab supports these **transferable objectives**:
+
+        - Understand core cloud development and cloud-native concepts.
+        - Apply API and service-based development techniques where relevant.
+        - Apply data handling, persistence, and third-party API integration where relevant.
+        - Develop, test, and improve a working cloud-ready solution.
+        - Follow industry practices (project structure, configuration, security, version control, and automation).
+        - Diagnose problems and debug applications, integrations, or deployment workflows.
+        - Explain technical decisions, trade-offs, and possible improvements.
+
+        Comment on alignment and suggest improved wording if needed.
+
+        - Does the lab clearly support one or more of the generic objectives?
+        - Are objectives stated at the start of the lab?
+        - Are they expressed as transferable skills rather than assignment-specific tasks?
+
+        ---
+
+        ### 2. Clarity and structure
+
+        Review whether the lab has:
+
+        - Clear learning objectives.
+        - Logical step-by-step instructions.
+        - Consistent headings and formatting.
+        - Language appropriate to Level 5 students, with unfamiliar terms explained.
+        - Enough explanation before tasks.
+        - No missing assumptions or unexplained setup steps.
+
+        Identify any unclear or confusing sections.
+
+        ---
+
+        ### 3. Portability and reuse
+
+        Cloud Development is the primary audience. Reuse in future related modules (such as Cloud Security or cloud-native development) is a secondary benefit.
+
+        Evaluate whether the lab can be reused or adapted where worthwhile:
+
+        - Does it avoid dependency on a particular summative assignment?
+        - Does the scenario teach transferable cloud development concepts?
+        - Could the scenario be adapted for a related module without losing its learning purpose?
+        - Are technology-specific requirements justified by the skills being taught?
+        - Are prerequisites and dependencies clear enough for future reuse?
+
+        Suggest portability improvements only where they strengthen the lab. Do not penalise a useful specialist practical.
+
+        ---
+
+        ### 4. Scaffolding and difficulty
+
+        Review whether the lab provides an appropriate level of support for Level 5 students. Assume some prior programming and cloud fundamentals knowledge, but not necessarily Python, FastAPI, or deployment experience.
+
+        Consider:
+
+        - Are early steps sufficiently guided?
+        - Are later steps more independent?
+        - Is there too much copy-and-paste code?
+        - Are students required to think, adapt, debug, or make decisions?
+        - Are hints provided where useful?
+
+        Suggest ways to improve the balance between guidance and independence.
+
+        ---
+
+        ### 5. Learning value
+
+        Check whether the lab encourages active learning rather than simple copying.
+
+        Look for opportunities where students:
+
+        - Explain what code, configuration, or an architecture decision does.
+        - Predict an API response or system behaviour.
+        - Investigate and debug an issue.
+        - Test their work and interpret results.
+        - Compare implementation or architecture approaches.
+        - Complete small challenges or variations.
+        - Modify or extend code, configuration, or diagrams.
+        - Reflect on technical decisions and trade-offs.
+
+        Suggest additional questions, checkpoints, or mini-activities if needed.
+
+        ---
+
+        ### 6. Practical skill development
+
+        Review whether the lab develops useful cloud development skills.
+
+        Consider, where relevant:
+
+        - Cloud-native concepts and architectural choices.
+        - HTTP, REST, API design, and OpenAPI documentation.
+        - Python, FastAPI, or other appropriate service frameworks.
+        - Third-party API integration and error handling.
+        - Data handling, persistence, CRUD, and validation.
+        - Git, project structure, and dependency management.
+        - Testing, debugging, and CI/CD.
+        - Authentication, authorisation, secrets, and secure configuration.
+        - Containers, cloud deployment, reliability, and observability.
+        - Accessibility and clear technical documentation.
+
+        Identify any missing or underdeveloped practical skills where applicable to the lab's focus.
+
+        ---
+
+        ### 7. Assessment independence
+
+        Labs should remain independent of the Cloud Development summative assignment.
+
+        Check:
+
+        - Does the lab stand alone without relying on the assignment brief or assessed scenario?
+        - Does it avoid supplying substantial parts of an assessed solution?
+        - Can outputs still be retained as formative or portfolio evidence?
+        - Are students encouraged to document decisions, tests, and results?
+
+        Suggest improvements if the lab is too tightly coupled to an assignment.
+
+        ---
+
+        ### 8. Reflection and feedback
+
+        Review whether the lab includes:
+
+        - Checkpoints for tutor feedback.
+        - Self-check questions.
+        - Reflection prompts.
+        - Troubleshooting guidance.
+        - Extension tasks.
+
+        Suggest improvements where reflection or feedback opportunities are missing.
+
+        ---
+
+        ### 9. Time and workload
+
+        Estimate how long the lab would take a typical Level 5 student.
+
+        Break down the estimate by section if possible.
+
+        Comment on:
+
+        - Whether the lab fits the intended session time.
+        - Whether any section is too long or too difficult.
+        - Whether environment setup, dependency installation, and troubleshooting time have been included.
+        - Whether extension tasks are clearly optional.
+
+        ---
+
+        ### 10. Technical accuracy and best practice
+
+        Check whether the technical content is correct and current.
+
+        Look for:
+
+        - Correct Python, API, configuration, and deployment examples where relevant.
+        - Correct HTTP methods, status codes, request/response handling, and validation.
+        - Secure handling of data, credentials, API keys, and secrets.
+        - Appropriate authentication and authorisation where relevant.
+        - Reproducible environments, declared dependencies, and clear project structure.
+        - Meaningful tests, checkpoints, and expected results.
+        - Appropriate handling of external API errors, timeouts, and failures.
+        - Clear warnings for cloud costs, permissions, and resource cleanup where relevant.
+        - Up-to-date commands, tools, and documented prerequisites.
+
+        Flag any technical risks or outdated practices.
+
+        ---
+
+        ### 11. Engagement and context
+
+        Review whether the lab feels meaningful and engaging.
+
+        Consider:
+
+        - Is there a realistic scenario?
+        - Is the task connected to something students might understand?
+        - Is the outcome visible and rewarding?
+        - Are there optional creative choices?
+        - Does the lab avoid feeling like disconnected exercises?
+
+        Suggest improvements to scenario, theme, or student motivation.
+
+  - type: input
+    id: lab-scope
+    attributes:
+      label: Lab scope
+      description: Which lab or files should be reviewed?
+      placeholder: e.g. README.md + exercise-1.md to exercise-4.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and constraints
+      description: Include audience level, course context, and anything that must not change.
+      placeholder: e.g. Level 5 students, 90-minute session, keep Python/FastAPI and current exercise scenario.
+    validations:
+      required: false
+
+  - type: textarea
+    id: review-instructions
+    attributes:
+      label: Review instructions
+      description: Extra instructions for the reviewer (optional).
+      placeholder: e.g. Prioritise low-effort, high-impact improvements.
+    validations:
+      required: false
+
+  - type: textarea
+    id: output-format
+    attributes:
+      label: Desired review output format
+      description: If you have a preferred structure for the review output, describe it here. Otherwise, the reviewer will choose an appropriate format.
+      value: |
+        Please provide your review in this structure:
+
+        1. **Overall summary** (3-6 bullet points)
+        2. **Findings by criterion**
+           - For each criterion, include:
+             - current state (what works / what does not)
+             - impact on learners
+             - confidence level (high/medium/low)
+        3. **Prioritised improvements**
+           - `Now` (must-fix before next run)
+           - `Next` (important improvements)
+           - `Later` (nice-to-have)
+        4. **Proposed edits**
+           - Specific suggested wording, sequence, or structure changes
+           - Where possible, map each suggestion to file and section
+        5. **Open questions / assumptions**
+
+        Keep recommendations concrete and implementable.
+
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Review criteria checklist
+      description: Mark each criterion as in scope for this review.
+      options:
+        - label: Clarity and structure
+          required: true
+        - label: Level of scaffolding
+          required: true
+        - label: Cognitive demand
+          required: true
+        - label: Practical skill development
+          required: true
+        - label: Feedback and reflection opportunities
+          required: true
+        - label: Time and workload realism
+          required: true
+        - label: Technical accuracy and currency
+          required: true
+        - label: Engagement and context
+          required: true
+
+  - type: textarea
+    id: rubric
+    attributes:
+      label: Optional scoring rubric
+      description: If useful, score each criterion from 1-5 and justify briefly.
+      placeholder: |
+        Clarity and structure: 3/5 - ...
+        Level of scaffolding: 4/5 - ...
+        ...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: done-checklist
+    attributes:
+      label: Completion checklist for reviewer
+      options:
+        - label: I reviewed all selected exercise materials.
+        - label: I addressed each in-scope criterion.
+        - label: I provided prioritised, actionable suggestions.
+        - label: I identified at least one quick win and one higher-impact improvement.
+        - label: I noted assumptions or unknowns.
