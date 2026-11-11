@@ -1,0 +1,47 @@
+name: Labs - Issue
+description: Report exercise issues, bugs, or suggested improvements.
+title: "lab issue: "
+labels: ["student-feedback", "teaching"]
+projects: ["SERC-Fd-Cloud-Dev/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Report a Lab Issue
+
+        Use this form to report anything unclear, broken, or improvable in the lab. Include as much detail as possible to help us understand and fix the issue.
+
+        Update the title to briefly summarize the issue (e.g. "lab issue: Exercise 2, Task 3 instructions are unclear").
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue type
+      description: What type of issue are you reporting?
+      options:
+        - Clarity issue (e.g. instructions are confusing or incomplete)
+        - Technical issue (e.g. code doesn't work, error messages, etc.)
+        - Improvement suggestion (e.g. ways to make the lab better)
+    validations:
+      required: true
+  
+  - type: input
+    id: exercise-task
+    attributes:
+      label: Which exercise(s) and task(s) is this about?
+      description: Include exercise number/title and task/step number(s) if possible.
+      placeholder: e.g. Exercise 2, Task 3 (step 5)
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Describe the issue, bug, or improvement
+      description: Explain what happened, what you expected, and any suggestion for improvement.
+      placeholder: |
+        What is the problem?
+        What did you expect?
+        How could this be improved?
+    validations:
+      required: true
